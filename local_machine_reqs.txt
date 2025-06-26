@@ -1,0 +1,9 @@
+# local_machine_reqs.txt
+# Dependencies to install on your Fedora Machine (rohit@fedora)
+#
+# To install:
+# pip install -r local_machine_reqs.txt
+
+numpy
+Pillow
+opencv-python

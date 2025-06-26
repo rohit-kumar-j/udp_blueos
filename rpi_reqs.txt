@@ -1,0 +1,19 @@
+# rpi_reqs.txt
+# Dependencies to install on your Raspberry Pi (sukote@raspberrypi)
+#
+# To install:
+# pip install -r rpi_reqs.txt
+#
+# Note: RPi.GPIO often requires special installation or pre-built wheels
+# if not available directly for your Python version/architecture.
+# If `pip install RPi.GPIO` fails, try `pip install RPi.GPIO --pre`
+# or consult Raspberry Pi OS documentation for GPIO library installation.
+
+numpy
+Pillow
+opencv-python
+picamera2
+smbus2
+spidev
+RPi.GPIO
+
