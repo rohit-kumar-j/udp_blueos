@@ -56,7 +56,7 @@ class DutyAccess(RawAccess):
 
 # todo reset
 class PCA9685:
-    def __init__(self, bus=1):
+    def __init__(self, bus=4):
         self.extclk = 24.567e6
         self._bus = smbus2.SMBus(bus)
         self.initialize()

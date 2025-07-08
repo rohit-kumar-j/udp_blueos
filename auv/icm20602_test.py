@@ -17,7 +17,7 @@ def main():
         print(f'a.x: {data.a.x} a.y: {data.a.y} a.z: {data.a.z}\n'
                 f'g.x: {data.g.x} g.y: {data.g.y} g.z: {data.g.z}\n'
                 f't: {data.t}\n')
-        time.sleep(0.001)
+        time.sleep(0.5)
                 # f'{data.a_raw.x} {data.a_raw.y} {data.a_raw.z}\n'
                 # f'{data.g_raw.x} {data.g_raw.y} {data.g_raw.z} {data.t_raw}\n\n')
 

@@ -48,8 +48,8 @@ except Exception as e:
 
 
 # --- Configuration Constants (Shared) ---
-PI_IP = '192.168.2.10'      # Raspberry Pi's static eth0 IP
-FEDORA_IP = '192.168.2.1'   # Fedora machine's static Ethernet IP
+PI_IP = '10.144.113.83' # '192.168.2.10'      # Raspberry Pi's static eth0 IP
+FEDORA_IP = '10.144.113.189'#' 192.168.2.1'   # Fedora machine's static Ethernet IP
 
 # Ports for UDP Communication
 VIDEO_STREAM_PORT = 65430        # Server (Pi) sends video to Client (Fedora) / Client receives video from Server
@@ -417,7 +417,7 @@ class AUV:
                             for i, val in enumerate(received_array):
                                 # Ensure value is clipped to -1.0 to 1.0 range
                                 clipped_val = np.clip(val, -1.0, 1.0) 
-                                pwm_us = 1500 + clipped_val * 500 # Maps -1 to 1000, 0 to 1500, 1 to 2000
+                                pwm_us = 1500 + clipped_val * 400 # Maps -1 to 1100, 0 to 1500, 1 to 1900
                                 self.motor_controller.channel_set_pwm(i, pwm_us)
                                 
                             self._log(f"Server: Applied motor commands: {received_array}")
